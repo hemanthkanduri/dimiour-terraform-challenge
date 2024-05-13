@@ -1,0 +1,12 @@
+subscription_id = "cab55b56-b5a7-4443-a247-e79699aad39a"
+client_id       = "XXXX.XXXX.XXXX.XXXX"
+client_secret   = "XXXX.XXXX.XXXX.XXXX"
+tenant_id       = "d043ce72-ba03-4c71-9752-8182ccd05df9"
+RGName = "dimiourrg"
+vnetname = "dimiourvnet"
+subnetname = "dimiourvnet-snet"
+location = "West Europe"
+aspname = "dimiourasp"
+asp-app-name = "dimiourasp-app"
+aspslotname = "dimiour-stagingslot"
+

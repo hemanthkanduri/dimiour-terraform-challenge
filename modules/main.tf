@@ -22,6 +22,7 @@ module "virtualnetwork" {
 
 module "appservice" {
     source = "./modules/AppService"
+    aspname = var.aspname
+    webappname = var.asp-app-name 
 
-  
-}
+  }

@@ -49,3 +49,8 @@ variable "asp-app-name" {
 variable "aspslotname" {
   type = string
 }
+
+variable "app_sku" {
+  type = string
+  description = "SKU tier of the App Service (e.g., FREE, B1)"
+}

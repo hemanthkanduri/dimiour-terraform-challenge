@@ -9,20 +9,24 @@ provider "azurerm" {
 
 module "resourceGroup" {
   source = "./modules/ResourceGroup"
-  name = var.RGName
+  RGName = var.RGName
   location = var.location
 }
 
 module "virtualnetwork" {
-  source = "./modules/VirtualNetwork"
-  RGname = module.resourceGroup.name
+  source = "./modules/VirtualNetwork"  
   location = var.location
-  name = var.vnetname
+  vnetname = var.vnetname
+  subnetname = var.subnetname
 }
 
 module "appservice" {
     source = "./modules/AppService"
-    aspname = var.aspname
-    webappname = var.asp-app-name 
+    RGName = var.RGName
+    aspname = var.aspname   
+    app_sku = var.app_sku
+    location = var.location
+    asp-app-name = var.asp-app-name
+    aspslotname = var.aspslotname
 
   }

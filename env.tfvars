@@ -9,4 +9,3 @@ location = "West Europe"
 aspname = "dimiourasp"
 asp-app-name = "dimiourasp-app"
 aspslotname = "dimiour-stagingslot"
-

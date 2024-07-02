@@ -23,5 +23,5 @@ jobs:
         
           run: |
                jq '.parameters.acrName.value = env.acrName | .parameters.location.value = env.location | .parameters.acrSku.value = env.acrSku ' / 
-                 ./environments/preproduction/local/parameters.json > "./parameters/parameters_updated.json"
+                 ./local/parameters.json > "./parameters/parameters_updated.json"
 

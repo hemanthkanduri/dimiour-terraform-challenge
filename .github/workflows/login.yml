@@ -13,7 +13,7 @@ on:
         - name: checkout code
           uses: actions/checkout@v4       
 
-        - name: run powershell
+        - name: run PowerShell
           shell: pwsh
           run: |
               local/customerdms-local.ps1
@@ -21,7 +21,7 @@ on:
 
         - name: Update ACR Name in parameter file
         
-        run: |
-            jq '.parameters.acrName.value = env.acrName | .parameters.location.value = env.location | .parameters.acrSku.value = env.acrSku ' / 
+          run: |
+               jq '.parameters.acrName.value = env.acrName | .parameters.location.value = env.location | .parameters.acrSku.value = env.acrSku ' / 
                  ./environments/preproduction/local/parameters.json > "./parameters/parameters_updated.json"
 

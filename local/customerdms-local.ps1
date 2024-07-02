@@ -1,0 +1,1 @@
+bash local/customerdms-local.sh
